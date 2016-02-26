@@ -1,0 +1,43 @@
+
+검색> span style 태그 속성
+http://www.htmlgoodies.com/tutorials/html_401/article.php/3479661
+span style에서 font-size는 언더바가 아니라 그냥 가운데 바(-)로 쓰는 것.
+<h1>태그는 약 25pt 정도.
+
+
+<textarea placeholder="Remember, be nice!" cols="30" rows="5"></textarea>
+게시글 쓰는 창에 회색 글씨로 이미 글 써있고 글 새로 작성할 때 사라지는 효과
+
+
+검색> html divide page
+http://www.w3schools.com/html/html_layout.asp
+
+
+controller에 bootstrap 적용하는 법
+view/layouts/application.html.erb에 bootstrap 적용
+
+
+div에 스크롤 추가하고 싶을때
+검색> div scroll
+<div style="overflow:scroll; >
+
+post = Post.new 안해서 자꾸 에러 떴다.
+post 없는 변수라고
+
+
+controller.rb에서
+def update
+    one_post = Post.find(params[:id])
+    ...
+end
+저게 계속 id를 찾을 수 없다고 에러 뜨길래
+빡쳐서 찾다가
+modify.erb <form>태그에서
+action="/huge/update/<% @one_post.id %>"
+action 경로에 <%= %> '='이 없는게 발견됨.. 딥 빡
+
+
+
+Excon::Errors::SocketError in HugeController#write
+Connection reset by peer (Errno::ECONNRESET)
+에러뜬다 에러..
